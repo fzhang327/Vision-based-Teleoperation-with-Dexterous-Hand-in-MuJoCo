@@ -1,0 +1,23 @@
+# safe_teleop_project/configs/franka_teleop.yml
+retargeting:
+  type: position
+  urdf_path: ../models/franka_description/urdf/fr3.urdf
+  
+  # 把目标连杆重复写两遍，骗过底层的 squeeze() bug
+  target_link_names:
+    - fr3_link8
+    - fr3_link8
+    
+  # 把映射的关键点（手腕）也写两遍
+  target_link_human_indices:
+    - 0
+    - 0
+  
+  target_joint_names:
+    - fr3_joint1
+    - fr3_joint2
+    - fr3_joint3
+    - fr3_joint4
+    - fr3_joint5
+    - fr3_joint6
+    - fr3_joint7
