@@ -5,7 +5,9 @@ This repository provides a real-time, vision-based teleoperation framework for t
 It utilizes a single RGB web camera to extract human hand landmarks via **MediaPipe** and retargets the Cartesian poses and dexterous finger flexions into the true dynamics (tendon-driven actuators) of the robotic system.
 
 ---
+# Demo of Vision-based Teleoperation
 
+![Demo](demo.gif)
 ## 🌟 Key Features
 
 * **Zero-Hardware Barrier:** Requires only a standard 2D web camera. No expensive motion-capture suits or VR headsets needed.
