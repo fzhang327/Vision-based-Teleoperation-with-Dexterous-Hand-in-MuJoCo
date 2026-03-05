@@ -17,25 +17,29 @@ It utilizes a single RGB web camera to extract human hand landmarks via **MediaP
 ```bash
 conda create -n safe_teleop python=3.10
 conda activate safe_teleop
-2. Install Core Dependencies:
 
-Bash
+**2. Install Core Dependencies:**
+
+```Bash
 pip install mediapipe opencv-python dex-retargeting mujoco
-3. Install DM Control (with NumPy fix):
 
-Bash
+**3. Install DM Control (with NumPy fix):**
+
+```Bash
 pip install dm_control "numpy<2.0.0"
-4. Clone the MuJoCo Menagerie Models:
+
+**4. Clone the MuJoCo Menagerie Models:**
 Ensure you have the latest DeepMind robot models cloned in your models/ directory:
 
-Bash
+```Bash
 mkdir -p models
 cd models
 git clone [https://github.com/google-deepmind/mujoco_menagerie.git](https://github.com/google-deepmind/mujoco_menagerie.git)
 cd ..
-🚀 Usage
+
+**🚀 Usage**
 Run the main teleoperation script:
 
-Bash
+```Bash
 cd src
 python teleop_mujoco_basic_Withhand.py
